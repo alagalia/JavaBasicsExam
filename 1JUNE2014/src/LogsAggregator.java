@@ -1,7 +1,10 @@
 /*
 Write a program to aggregate the logs data and print for each user the total duration of his sessions and a list of unique IP addresses in format "<user>: <duration> [<IP1>, <IP2>, …]". Order the users alphabetically. Order the IPs alphabetically.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> remotes/origin/master
 import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.TreeSet;
