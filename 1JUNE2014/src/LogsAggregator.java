@@ -1,6 +1,7 @@
 /*
 Write a program to aggregate the logs data and print for each user the total duration of his sessions and a list of unique IP addresses in format "<user>: <duration> [<IP1>, <IP2>, …]". Order the users alphabetically. Order the IPs alphabetically.
  */
+
 import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -18,9 +19,11 @@ public class LogsAggregator {
             String user = line[1];
             int dur = Integer.parseInt(line[2]);
 
-            AddDuration(durations, user, dur);
-            AddIp(ipAdres, user, ip);
+            addDuration(durations, user, dur);
+            addIp(ipAdres, user, ip);
         }
+
+        //print result
         for (String user : ipAdres.keySet()) {
             System.out.print(user);
             System.out.print(": "+durations.get(user)+" ");
@@ -29,14 +32,15 @@ public class LogsAggregator {
         System.out.println();
     }
 
-    private static void AddIp(TreeMap<String, TreeSet<String>> ipAdres, String user, String ip) {
+
+    private static void addIp(TreeMap<String, TreeSet<String>> ipAdres, String user, String ip) {
         if (!ipAdres.containsKey(user)){
             ipAdres.put(user, new TreeSet<>());
         }
         ipAdres.get(user).add(ip);
     }
 
-    private static void AddDuration(TreeMap<String, Integer> durations,String user, int dur) {
+    private static void addDuration(TreeMap<String, Integer> durations, String user, int dur) {
         if (!durations.containsKey(user)){
             durations.put(user,0);
         }
