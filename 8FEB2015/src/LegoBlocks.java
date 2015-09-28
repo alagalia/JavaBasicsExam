@@ -1,5 +1,5 @@
 /*
-You are given two jagged arrays. Each array represents a Lego block containing integers. Your task is first to reverse the second jagged array and then check if it would fit perfectly in the first jagged array. 
+You are given two jagged arrays. Each array represents a Lego block containing integers. Your task is first to reverse the second jagged array and then check if it would fit perfectly in the first jagged array.
  */
 import java.util.ArrayList;
 import java.util.Arrays;
