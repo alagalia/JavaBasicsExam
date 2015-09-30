@@ -5,7 +5,7 @@ import java.util.*;
     For each product print the customers and their aggregated ordered amounts.
     Order the customers by name alphabetically.
     Print the result in the following format: <product>: <customer> <amount>, <customer> <amount>, …
-     For each product print the customers ordered this product in alphabetical order.
+    For each product print the customers ordered this product in alphabetical order.
 */
 public class Orders {
 
