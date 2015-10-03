@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 /**
- * Created by Dell on 29.9.2015 ã..
+ We are given a sequence of characters S. This sequence holds junk characters.  Junk characters are:
+  "\", "/", "(", ")", "|" and all empty spaces (1 or more). Your first task is to remove all junk characters.  Then you have to find all words in the resulted string. Word is considered any sequence of letters (a-z A-Z). Each of those words has weight. Each letter weight corresponds to its value in the English alphabet (a = 1, b=2â€¦z=26). Small and capital letters have the same weight.  Your task is to find the sum of every 2 consecutive words and print on the console the 2 words with biggest sum. 
  */
 public class WeirdStrings {
     public static void main(String[] args) {
